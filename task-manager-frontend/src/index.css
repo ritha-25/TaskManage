@@ -1,0 +1,67 @@
+:root {
+  --paper: #F4F5F1;
+  --surface: #FFFFFF;
+  --ink: #20242B;
+  --ink-soft: #5B616C;
+  --line: #DBDDD6;
+  --accent: #e0953f8d;
+  --accent-soft: #E9EAFB;
+
+  --pending: #B8863F;
+  --pending-bg: #FAF1E2;
+  --completed: #3E8F6B;
+  --completed-bg: #E8F3ED;
+
+  --priority-high: #C0503F;
+  --priority-medium: #B8863F;
+  --priority-low: #5F8F6B;
+
+  --danger: #C0503F;
+
+  --radius: 6px;
+  --font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    /* animation-duration: 0.01ms ; */
+    transition-duration: 0.01ms ;
+  }
+}
